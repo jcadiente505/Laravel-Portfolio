@@ -1,0 +1,28 @@
+.intro-section {
+    background: #6200EA;
+
+    .about-section {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .intro {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            top: 20%
+        }
+
+        .intro-title {
+            position: relative;
+            top: 0px;
+            color: white;
+        }
+
+        .right-underline {
+            border-bottom: 4px black solid;
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@keyframes outward-line {
+    from {
+      left:50%;
+      width:0%;
+    }
+    to {
+      left:5%;
+      width:90%;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-down {
+    from {
+        opacity: 0;
+        top: -20px;
+    }
+    to {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@keyframes arrow {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translate(-10px, -10px)
+    }
+}

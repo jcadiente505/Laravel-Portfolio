@@ -1,0 +1,76 @@
+.landing {
+    height: 80vh;
+
+    .home-text-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .typed-element {
+            justify-content: center;
+        }
+
+        .outward-line {
+            display:block;
+            position:absolute;
+            left:50%;
+            border-bottom:4px solid black;
+            width:0%;
+            text-align:center;
+            animation: outward-line 1s linear forwards;
+            animation-delay: 2s;
+        }
+
+        .sub-text {
+            opacity: 0;
+            animation: fade-in 1.5s linear forwards;
+            animation-delay: 3s;
+        }
+
+        .arrow,
+        .arrow:before {
+            position: absolute;
+            left: 50%;
+            opacity: 0;
+            animation: fade-in 1.5s linear forwards;
+            animation-delay: 3s;
+            cursor: pointer;
+        }
+
+        .arrow {
+            width: 25px;
+            height: 25px;
+            top: 120%;
+            margin: -20px 0 0 -20px;
+            -webkit-transform: rotate(45deg);
+            border-left: none;
+            border-top: none;
+            border-right: 2px black solid;
+            border-bottom: 2px black solid;
+        }
+
+        
+        .arrow:before {
+            content: '';
+            width: 12.5px;
+            height: 12.5px;
+            top: 50%;
+            margin: -10px 0 0 -10px;
+            border-left: none;
+            border-top: none;
+            border-right: 1px black solid;
+            border-bottom: 1px black solid;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-name: arrow;
+        }
+    }
+}
+
+.svg-wave {
+    overflow: hidden;
+    transform: rotate(180deg);
+    position: relative;
+    bottom: -1px;
+}

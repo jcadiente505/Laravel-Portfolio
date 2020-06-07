@@ -1,0 +1,72 @@
+.nav-title {
+    border-bottom: 4px black solid;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #6200EA;
+
+    &:hover {
+        color: black;
+        text-decoration: none;
+        border-bottom: 4px solid #6200EA;
+    }
+}
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: fixed;
+    left: 94%;
+    z-index: 99999;
+
+    &.active {
+        transform: rotate(45deg);
+
+        .top {
+            stroke-dashoffset: -64px;
+        }
+
+        .middle {
+            //stroke-dashoffset: -20px;
+            transform: rotate(90deg);
+        }
+        .bottom {
+            stroke-dashoffset: -64px;
+        }
+    }
+
+    .top {
+        stroke-dasharray: 40 160;
+    }
+
+    .middle {
+        stroke-dasharray: 40 142;
+        transform-origin: 50%;
+        transition: transform 400ms;
+    }
+
+    .bottom {
+        stroke-dasharray: 40 85;
+        transform-origin: 50%;
+        transition: transform 400ms, stroke-dashoffset 400ms;
+    }
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:black;
+    stroke-width:5.5;
+    stroke-linecap:round;
+}

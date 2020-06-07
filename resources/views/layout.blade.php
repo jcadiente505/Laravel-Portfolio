@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Laravel</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <!-- CSS -->
+        <link href="{{ URL::asset('css/app.css') }}" rel="stylesheet" type="text/css" >
+    </head>
+    <body>
+        <div id="app">
+            {{-- Vue Components rendered here --}}
+            <navbar></navbar>
+            {{-- <router-link :to="{ name: 'home' }">Home</router-link>
+            <router-link :to="{ name: 'about' }">About</router-link> --}}
+            <router-view></router-view>
+
+
+        </div>
+    </body>
+    <script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
+</html>
