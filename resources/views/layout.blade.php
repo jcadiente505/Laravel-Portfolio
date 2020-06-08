@@ -23,5 +23,6 @@
 
         </div>
     </body>
+    <script src="https://use.fontawesome.com/d906f2111c.js"></script>
     <script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
 </html>

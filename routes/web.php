@@ -13,7 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{any?}', function () {
+Route::get('/', function () {
 
     return view('layout');
+});
+
+Route::get('/download', function() {
+    $file = public_path().'/resume.pdf';
+
+    $headers = array(
+        'Content-Type: application/pdf',
+    );
+
+    return response()->download($file, 'Resume.pdf', $headers);
 });

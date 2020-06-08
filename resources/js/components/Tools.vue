@@ -1,5 +1,5 @@
 <template>
-    <div class="tool-section mt-5">
+    <div class="tool-section my-5">
         <div class="row">
             <div class="col-4">
                 <div class="tool-col">

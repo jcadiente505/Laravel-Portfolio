@@ -9,6 +9,26 @@
     }
 }
 
+[data-aos="outward-line"] {
+    left:50%;
+    width:0%;
+    transition-property: left, width;
+  
+    &.aos-animate {
+        left:5%;
+        width:90%;
+    }
+}
+
+[data-aos="left-line"] {
+    width:0%;
+    transition-property: width;
+  
+    &.aos-animate {
+        width:57.5%;
+    }
+}
+
 @keyframes fade-in {
     from {
         opacity: 0

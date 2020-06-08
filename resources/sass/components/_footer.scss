@@ -1,0 +1,75 @@
+.footer-section {
+    background: #6200EA;
+    height: 80vh;
+    color: white;
+
+    h3 {
+        color: white;
+    }
+
+    span {
+        border-bottom: 4px black solid;
+        width: 0%;
+        position: absolute;
+    }
+
+    .social-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .social-bg {
+            text-decoration: none;
+            background: white;
+            width: 75px;
+            height: 75px;
+            text-align: center;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 1;
+
+            &:hover {
+                background: #6200EA;
+                border: 1px white solid
+            }
+
+            
+
+            i {
+                font-size: 40px;
+            }
+
+            .fa-facebook-official {
+                color: #4267B2;
+
+                &:hover {
+                    color: white;
+                }
+            }
+
+            .fa-github-square {
+                color: #070709;
+
+                &:hover {
+                    color: white;
+                }
+            }
+
+            .fa-linkedin-square {
+                color: #0085AE;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        } 
+    }
+
+    .bottom {
+        position: relative;
+        top: 39%;
+    }
+}
+

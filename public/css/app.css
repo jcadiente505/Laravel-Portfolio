@@ -24,6 +24,26 @@
   }
 }
 
+[data-aos=outward-line] {
+  left: 50%;
+  width: 0%;
+  transition-property: left, width;
+}
+
+[data-aos=outward-line].aos-animate {
+  left: 5%;
+  width: 90%;
+}
+
+[data-aos=left-line] {
+  width: 0%;
+  transition-property: width;
+}
+
+[data-aos=left-line].aos-animate {
+  width: 57.5%;
+}
+
 @-webkit-keyframes fade-in {
   from {
     opacity: 0;
@@ -11112,12 +11132,130 @@ h6 {
   stroke-linecap: round;
 }
 
+#menu {
+  background: #6200EA;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  transition: all 0.7s ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1100;
+}
+
+#menu.open {
+  opacity: 0.9;
+  visibility: visible;
+}
+
+#menu.open li:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+#menu.open li:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+#menu.open li:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+#menu.open li:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+#menu.open li:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+#menu.open li:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+#menu.open li:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+#menu.open li:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+#menu.open li:nth-child(9) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+#menu.open li:nth-child(10) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#menu.open li {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+}
+
+#menu ul:hover a {
+  opacity: 0.5;
+}
+
+#menu ul a {
+  -webkit-transform: translateZ(0);
+  transition: opacity 0.3s ease-in-out;
+}
+
+#menu ul a:hover {
+  opacity: 1;
+}
+
+#menu .main-nav {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#menu .main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu .main-nav a {
+  color: #ffffff;
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#menu .main-nav a:first {
+  padding-top: 0;
+}
+
 .intro-section {
   background: #6200EA;
 }
 
 .intro-section .about-section {
-  height: 80vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -11145,8 +11283,6 @@ h6 {
   background: #ffffff;
   border-radius: 10px;
   border: 1px black solid;
-  position: relative;
-  top: 30%;
 }
 
 .tool-section h5 {
@@ -11178,6 +11314,172 @@ h6 {
 .tool-section .middle {
   border-left: 2px black solid;
   border-right: 2px black solid;
+}
+
+.outward-line {
+  display: block;
+  position: absolute;
+  left: 50%;
+  border-bottom: 4px solid black;
+  width: 0%;
+  text-align: center;
+}
+
+.resume-btn {
+  padding: 15px;
+  font-size: 15px;
+  border: 1px #6200EA solid;
+  color: #6200EA;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s background-color;
+}
+
+.resume-btn:hover {
+  color: white;
+  background-color: #6200EA;
+  text-decoration: none;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-height: 320px;
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-image {
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-top {
+  top: 20%;
+}
+
+.footer-section {
+  background: #6200EA;
+  height: 80vh;
+  color: white;
+}
+
+.footer-section h3 {
+  color: white;
+}
+
+.footer-section span {
+  border-bottom: 4px black solid;
+  width: 0%;
+  position: absolute;
+}
+
+.footer-section .social-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-section .social-wrapper .social-bg {
+  text-decoration: none;
+  background: white;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.footer-section .social-wrapper .social-bg:hover {
+  background: #6200EA;
+  border: 1px white solid;
+}
+
+.footer-section .social-wrapper .social-bg i {
+  font-size: 40px;
+}
+
+.footer-section .social-wrapper .social-bg .fa-facebook-official {
+  color: #4267B2;
+}
+
+.footer-section .social-wrapper .social-bg .fa-facebook-official:hover {
+  color: white;
+}
+
+.footer-section .social-wrapper .social-bg .fa-github-square {
+  color: #070709;
+}
+
+.footer-section .social-wrapper .social-bg .fa-github-square:hover {
+  color: white;
+}
+
+.footer-section .social-wrapper .social-bg .fa-linkedin-square {
+  color: #0085AE;
+}
+
+.footer-section .social-wrapper .social-bg .fa-linkedin-square:hover {
+  color: white;
+}
+
+.footer-section .bottom {
+  position: relative;
+  top: 39%;
 }
 
 .landing {
@@ -11263,5 +11565,10 @@ h6 {
   transform: rotate(180deg);
   position: relative;
   bottom: -1px;
+}
+
+.svg-bottom-wave {
+  position: relative;
+  bottom: -80px;
 }
 
