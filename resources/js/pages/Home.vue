@@ -34,7 +34,7 @@
         </defs>
         </svg>
         <!-- Call SVG with <use> -->
-        <svg class="background-shape-bottom svg-wave" width="1920px" height="81.71px" aria-hidden="true">
+        <svg class="background-shape-bottom svg-wave" width="100%" height="81.71px" aria-hidden="true">
             <use xlink:href="#shape-offercarousel-background-shape-bottom"></use>
         </svg>
         <intro></intro>
@@ -56,7 +56,7 @@
         </defs>
         </svg>
         <!-- Call SVG with <use> -->
-        <svg class="background-shape-bottom-footer svg-bottom-wave" width="1920px" height="81.71px" aria-hidden="true">
+        <svg class="background-shape-bottom-footer svg-bottom-wave" width="100%" height="81.71px" aria-hidden="true">
             <use xlink:href="#shape-offercarousel-background-shape-bottom-footer"></use>
         </svg>
         <footer-section></footer-section>

@@ -23,8 +23,18 @@
     -ms-user-select: none;
     user-select: none;
     position: fixed;
-    left: 94%;
-    z-index: 99999;
+    left: 75%;
+    top: 2%;
+
+    @include respond-above(sm) {
+      left: 88%;
+      top: unset;
+    }
+
+    @include respond-above(md) {
+      left: 94%;
+      top: unset;
+    }
 
     &.active {
         transform: rotate(45deg);

@@ -3561,9 +3561,9 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "bottom text-center" }, [
+        _c("div", { staticClass: "bottom text-center mt-5 pt-5" }, [
           _c("p", { staticClass: "small-text" }, [
-            _vm._v("Made by Yours, Truly 2020")
+            _vm._v("Made by Jacob Cadiente 2020")
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "small-text" }, [
@@ -3663,7 +3663,10 @@ var render = function() {
       [
         _c(
           "router-link",
-          { staticClass: "nav-title mx-3", attrs: { to: { name: "home" } } },
+          {
+            staticClass: "nav-title my-3 my-sm-0 mx-sm-3",
+            attrs: { to: { name: "home" } }
+          },
           [_vm._v("Jake Cadiente")]
         ),
         _vm._v(" "),
@@ -4105,7 +4108,7 @@ var render = function() {
         "svg",
         {
           staticClass: "background-shape-bottom svg-wave",
-          attrs: { width: "1920px", height: "81.71px", "aria-hidden": "true" }
+          attrs: { width: "100%", height: "81.71px", "aria-hidden": "true" }
         },
         [
           _c("use", {
@@ -4163,7 +4166,7 @@ var render = function() {
         "svg",
         {
           staticClass: "background-shape-bottom-footer svg-bottom-wave",
-          attrs: { width: "1920px", height: "81.71px", "aria-hidden": "true" }
+          attrs: { width: "100%", height: "81.71px", "aria-hidden": "true" }
         },
         [
           _c("use", {

@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid">
         <div class="navbar d-flex justify-content-between">
-            <router-link :to="{ name: 'home'}" class="nav-title mx-3">Jake Cadiente</router-link>
+            <router-link :to="{ name: 'home'}" class="nav-title my-3 my-sm-0 mx-sm-3">Jake Cadiente</router-link>
             <svg ref="ham" class="ham hamRotate" viewBox="0 0 100 100" width="80" v-on:click="toggleMenu">
                 <path
                     class="line top"

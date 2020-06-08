@@ -13,8 +13,8 @@
                 </div>
             </div>
         </div>
-        <div class="bottom text-center">
-            <p class="small-text">Made by Yours, Truly 2020</p>
+        <div class="bottom text-center mt-5 pt-5">
+            <p class="small-text">Made by Jacob Cadiente 2020</p>
             <p class="small-text">Powered by Laravel/Vue/Coffee</p>
         </div>
     </div>

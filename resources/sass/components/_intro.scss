@@ -18,11 +18,20 @@
             position: relative;
             top: 0px;
             color: white;
+            text-align: center;
+
+            @include respond-above(sm) {
+                text-align: start;
+            }
         }
 
         .right-underline {
             border-bottom: 4px black solid;
-            width: 50%;
+            width: 100%;
+
+            @include respond-above(sm) {
+                width: 50%;
+            }
         }
     }
 }

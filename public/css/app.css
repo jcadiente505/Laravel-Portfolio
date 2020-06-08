@@ -11084,8 +11084,22 @@ h6 {
   -ms-user-select: none;
   user-select: none;
   position: fixed;
-  left: 94%;
-  z-index: 99999;
+  left: 75%;
+  top: 2%;
+}
+
+@media (min-width: 575px) {
+  .ham {
+    left: 88%;
+    top: unset;
+  }
+}
+
+@media (min-width: 768px) {
+  .ham {
+    left: 94%;
+    top: unset;
+  }
 }
 
 .ham.active {
@@ -11272,11 +11286,24 @@ h6 {
   position: relative;
   top: 0px;
   color: white;
+  text-align: center;
+}
+
+@media (min-width: 575px) {
+  .intro-section .about-section .intro-title {
+    text-align: start;
+  }
 }
 
 .intro-section .about-section .right-underline {
   border-bottom: 4px black solid;
-  width: 50%;
+  width: 100%;
+}
+
+@media (min-width: 575px) {
+  .intro-section .about-section .right-underline {
+    width: 50%;
+  }
 }
 
 .tool-section {
@@ -11411,7 +11438,7 @@ h6 {
 
 .footer-section {
   background: #6200EA;
-  height: 80vh;
+  height: 100%;
   color: white;
 }
 
