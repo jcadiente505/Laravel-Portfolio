@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <!-- CSS -->
-        <link href="{{ URL::asset('css/app.css') }}" rel="stylesheet" type="text/css" >
+        <link href="https://www.jacobcadiente.dev/public/css/app.css" rel="stylesheet" type="text/css" >
     </head>
     <body>
         <div id="app">
@@ -24,5 +24,5 @@
         </div>
     </body>
     <script src="https://use.fontawesome.com/d906f2111c.js"></script>
-    <script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
+    <script type="text/javascript" src="https://www.jacobcadiente.dev/public/js/app.js"></script>
 </html>
